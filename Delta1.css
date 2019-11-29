@@ -1,0 +1,169 @@
+/* Règles taille et couleur Material Icons */
+.material-icons.md-48 
+{ 
+  font-size: 48px;
+  margin-right: 0.5em; 
+  margin-top: 0.3em;
+}
+.material-icons.md-light 
+{ 
+  color: rgba(255, 255, 255, 1); 
+}
+
+/* Typo Acherus en Local */
+@font-face {
+ font-family: "Acherus Grotesque";
+ src: local("/Fonts/Acherus/Acherus Grotesque Light.otf") format("otf");
+ 
+}
+
+/* Paramètres des textes d'intro */
+.TexteIntro
+{
+  font-family: Acherus Grotesque;
+  width: 15em;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .TexteIntro
+  {
+    margin-left: 5%;
+    margin-top: 4em;
+    width: 9em;
+  }
+}
+
+.Dates
+{
+  font-family: Acherus Grotesque;
+  width: 15em;
+  margin-left: 10%;
+  margin-top: -1em;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px)
+{
+	.Dates
+	{
+		margin-left: 5%;
+		font-size: 0.8em;
+	}
+}
+
+.Prix
+{
+  font-family: Acherus Grotesque;
+  width: 15em;
+  margin-left: 10%;
+  margin-top: -2em;
+  color: #ffffff;
+  font-size: 0.6em;
+}
+
+@media screen and (max-width: 768px)
+{
+	.Prix
+	{
+		margin-left: 5%;
+		font-size: 0.5em;
+	}
+}
+
+/* Paramètres du bouton Voir le programme */
+.BoutonHome
+{
+	cursor: pointer;
+	width: 15em;
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:0.5em;
+	background:#fff;
+	font-family: Acherus Grotesque;
+	margin-left: 10%;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px)
+{
+	.BoutonHome
+	{
+		margin-left: 5%;
+		font-size: 0.6em;
+	}
+}
+
+/* Image de fond */
+body
+{
+  background-image: url(images/BergmanBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Image de fond à partir de 768px */
+@media screen and (max-width: 768px)
+{
+  body
+  {
+    background-image: url(images/BergmanAloneColor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Paramètres du h2 normal */
+h2
+{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #EB288F;
+}
+
+/* Paramètres du h2 à partir de 768px */
+@media screen and (max-width: 768px)
+{
+h2
+  {
+    font-size: 0.8em;
+  }
+}
+
+/* Paramètres du h1 normal */
+h1
+{
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-top: -0.2em;
+  line-height: 1.2em;
+}
+
+/* Paramètres du h1 à partir de 768px */
+@media screen and (max-width: 768px)
+{
+h1
+  {
+    font-size: 1.6em;
+  }
+}
+
+/* éléments du header */
+.container_header
+{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo
+{
+  max-width: 12em;
+  height: auto;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
