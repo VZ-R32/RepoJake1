@@ -245,7 +245,6 @@ p
 {
   width: 50%;
   min-width: 18em;
-  height: 20em;
 }
 
 @media screen and (max-width: 768px)
@@ -329,4 +328,42 @@ p
     width: 1.7em;
     height: 1.7em;
   }
+}
+
+.CheckerboardInsta
+{
+  font-family: Acherus Grotesque;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .CheckerboardInsta
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+#checkerboard1
+{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat (2, auto);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.Insta1, .Insta2, .Insta3, .Insta4, .Insta5, .Insta6
+{
+  max-width: 100%;
+}
+
+.largeur
+{
+  max-width: 1200px;
+  margin: auto;
 }
