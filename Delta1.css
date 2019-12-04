@@ -1,22 +1,95 @@
 /* Règles taille et couleur Material Icons */
-.material-icons.md-48 
-{ 
+.material-icons.md-48
+{
   font-size: 48px;
-  margin-right: 0.5em; 
+  margin-right: 0.5em;
   margin-top: 0.3em;
 }
-.material-icons.md-light 
-{ 
-  color: rgba(255, 255, 255, 1); 
+.material-icons.md-light
+{
+  color: rgba(255, 255, 255, 1);
+}
+
+body
+{
+  margin: 0;
 }
 
 /* Typo Acherus en Local */
 @font-face {
  font-family: "Acherus Grotesque";
  src: local("/Fonts/Acherus/Acherus Grotesque Light.otf") format("otf");
- 
+
 }
 
+/* Image de fond */
+.HomeFloat
+{
+  background-image: url(images/BergmanBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Image de fond à partir de 768px */
+@media screen and (max-width: 768px)
+{
+  .HomeFloat
+  {
+    background-image: url(images/BergmanAloneColor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Paramètres du h2 normal */
+h2
+{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #EB288F;
+}
+
+/* Paramètres du h2 à partir de 768px */
+@media screen and (max-width: 768px)
+{
+h2
+  {
+    font-size: 0.8em;
+  }
+}
+
+/* Paramètres du h1 normal */
+h1
+{
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-top: -0.2em;
+  line-height: 1.2em;
+}
+
+/* Paramètres du h1 à partir de 768px */
+@media screen and (max-width: 768px)
+{
+h1
+  {
+    font-size: 1.6em;
+  }
+}
+
+/* Paramètres du p normal */
+p
+{
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* Paramètres du p à partir de 768px */
+@media screen and (max-width: 768px)
+{
+  p
+  {
+    font-size: 0.8em;
+  }
+}
 /* Paramètres des textes d'intro */
 .TexteIntro
 {
@@ -86,6 +159,7 @@
 	font-family: Acherus Grotesque;
 	margin-left: 10%;
 	margin-top: 1em;
+  margin-bottom: 10em;
 	font-weight: bold;
 }
 
@@ -96,59 +170,6 @@
 		margin-left: 5%;
 		font-size: 0.6em;
 	}
-}
-
-/* Image de fond */
-body
-{
-  background-image: url(images/BergmanBackground.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* Image de fond à partir de 768px */
-@media screen and (max-width: 768px)
-{
-  body
-  {
-    background-image: url(images/BergmanAloneColor.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
-/* Paramètres du h2 normal */
-h2
-{
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #EB288F;
-}
-
-/* Paramètres du h2 à partir de 768px */
-@media screen and (max-width: 768px)
-{
-h2
-  {
-    font-size: 0.8em;
-  }
-}
-
-/* Paramètres du h1 normal */
-h1
-{
-  font-size: 2.5em;
-  color: #ffffff;
-  margin-top: -0.2em;
-  line-height: 1.2em;
-}
-
-/* Paramètres du h1 à partir de 768px */
-@media screen and (max-width: 768px)
-{
-h1
-  {
-    font-size: 1.6em;
-  }
 }
 
 /* éléments du header */
@@ -167,3 +188,145 @@ h1
   margin-top: 0.5em;
 }
 
+/* Paramètres de la section tuile Actualité Home */
+.DernièreActualité
+{
+  font-family: Acherus Grotesque;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 768px)
+{
+  .DernièreActualité
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+
+/* Paramètres du container Flex de la tuile actualité Home */
+#FlexActu1
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shape
+{
+  width: 45%;
+  min-width: 18em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+
+}
+
+@media screen and (max-width: 768px)
+{
+  .shape
+  {
+    width: 100%;
+    margin-right: 0em;
+  }
+}
+
+.imgMonceau
+{
+  width: 100%;
+  min-width: 18em;
+  height: auto;
+}
+
+.shape2
+{
+  width: 50%;
+  min-width: 18em;
+  height: 20em;
+}
+
+@media screen and (max-width: 768px)
+{
+  .shape2
+  {
+    width: 100%;
+  }
+}
+
+/* Paramètres du container Flex dans le container Flex pour les boutons Actualité Home */
+#Inner
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.shape4
+{
+  background-color: blue;
+  width: 8em;
+  height: 3em;
+}
+
+/* Paramètres du bouton "Lire la suite" Actualité Home */
+.BoutonActu1
+{
+	cursor: pointer;
+	width: 10em;
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:0.5em;
+	background:#EB288F;
+  color: #ffffff;
+	font-family: Acherus Grotesque;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px)
+{
+	.BoutonActu1
+	{
+		font-size: 0.6em;
+	}
+}
+
+#inner2
+{
+  display: flex;
+}
+.shape4
+{
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background: blue;
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 768px)
+{
+  .shape4
+  {
+    width: 1.7em;
+    height: 1.7em;
+  }
+}
+
+.shape5
+{
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background: blue;
+}
+
+@media screen and (max-width: 768px)
+{
+  .shape5
+  {
+    width: 1.7em;
+    height: 1.7em;
+  }
+}
