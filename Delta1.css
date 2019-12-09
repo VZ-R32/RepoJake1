@@ -22,6 +22,12 @@ body
 
 }
 
+/* Variable couleur principale */
+:root
+{
+  --main-color: #EB288F
+}
+
 /* Image de fond */
 .HomeFloat
 {
@@ -65,7 +71,7 @@ h2
   font-family: Acherus Grotesque;
   font-size: 1.2em;
   font-weight: bold;
-  color: #EB288F;
+  color: var(--main-color);
 }
 
 /* Paramètres du h2 à partir de 768px */
@@ -81,6 +87,7 @@ h2
 /* Paramètres du h1 normal */
 h1
 {
+  font-family: Acherus Grotesque;
   font-size: 2.5em;
   color: #ffffff;
   margin-top: -0.2em;
@@ -92,6 +99,7 @@ h1
 {
 h1
   {
+    font-family: Acherus Grotesque;
     font-size: 1.6em;
   }
 }
@@ -212,7 +220,8 @@ p
   position: relative;
 }
 
-.logo
+/* Paramètres du logo Les films de plein air */
+.container_header :nth-child(1)
 {
   max-width: 12em;
   height: auto;
@@ -309,7 +318,7 @@ p
 	border:none;
 	padding:6px 0 6px 0;
 	border-radius:0.5em;
-	background:#EB288F;
+	background: var(--main-color);
   color: #ffffff;
 	font-family: Acherus Grotesque;
 	font-weight: bold;
@@ -391,7 +400,7 @@ p
   grid-row-gap: 1em;
 }
 
-.Insta1, .Insta2, .Insta3, .Insta4, .Insta5, .Insta6
+#checkerboard1>*
 {
   max-width: 100%;
 }
@@ -417,12 +426,12 @@ p
 .LiensMenu
 {
   padding : 0 0 0.02em 0;
-  border-bottom : 0.2em solid #EB288F;
+  border-bottom : 0.2em solid var(--main-color);
 }
 
 
 /* PAGE PROGRAMME - Paramètres de la section Casablanca */
-#Casablanca, #DeadMan, #LaNuitDuChasseur
+#Casablanca, #DeadMan, #LaNuitDuChasseur, #OnlyLovers, #InTheMood
 {
   margin-left: 10%;
   margin-right: 10%;
@@ -430,7 +439,7 @@ p
 
 @media screen and (max-width: 768px)
 {
-  #Casablanca, #DeadMan, #LaNuitDuChasseur
+  #Casablanca, #DeadMan, #LaNuitDuChasseur, #OnlyLovers, #InTheMood
   {
     margin-left: 5%;
     margin-right: 5%;
@@ -469,7 +478,7 @@ p
 /* PAGE PROGRAMME - Paramètres des infos sur le film */
 .FilmMaker
 {
-  color: #EB288F;
+  color: var(--main-color);
   font-weight: bold;
   line-height: 01%;
 }
@@ -482,7 +491,7 @@ p
 
 .Projection
 {
-  color: #EB288F;
+  color: var(--main-color);
   font-weight: bold;
   line-height: 01%;
 }
@@ -515,4 +524,61 @@ a
 {
   text-decoration: none;
   color: inherit;
+}
+
+/* TOUTES LES PAGES - Paramètres section footer */
+#footer
+{
+  height: 10em;
+  background-image: url(images/BackFooter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* TOUTES LES PAGES - Container flex pour les liens footer */
+#footer>*
+{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px)
+{
+  #footer>*
+  {
+    flex-direction: column;
+  }
+}
+
+/* TOUTES LES PAGES - espacements entre les liens footer */
+#footer div>*
+{
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top:3em;
+}
+
+
+@media screen and (max-width: 768px)
+{
+  #footer div>*
+  {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  #footer div>:nth-child(1)
+  {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3em;
+    text-align: center;
+  }
 }
